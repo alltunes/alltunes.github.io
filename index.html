@@ -598,8 +598,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>For no startup music, more features, and custom widgets, <a href="download.html" style="color: black">download the all-new Windows app</a>.</p>
+    <p>AD: Shop EasyHolos holograms at <a href="https://easyholos.github.io/" style="color: gray">easyholos.github.io</a>.</p>
   </div>
+  
+  <script>
+    
+    var x = document.getElementById("myAudio");
+    
+    function pauseAudio() { 
+  x.pause(); 
+} 
+    
+  </script>
 
 </div>
 
@@ -624,42 +634,42 @@ Your browser does not support the audio element.
 
 <center><p style="font-family: Garamond; font-size: 24px">Free AllTunes Music</p></center>
 
-<center style="padding: 64px"><audio controls>
+<center style="padding: 64px"><audio controls id="myAudio">
   <source src="yummy.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
     <p style="font-family: Garamond; font-size: 16px">Justin Bieber - Yummy</p></center>
 
-<center style="padding: 64px"><audio controls>
+<center style="padding: 64px"><audio controls id="myAudio">
   <source src="ghost.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
 <p style="font-family: Garamond; font-size: 16px">Justin Bieber - Ghost</p></center>
 
-<center style="padding: 64px"><audio controls>
+<center style="padding: 64px"><audio controls id="myAudio">
   <source src="coldwater.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
 <p style="font-family: Garamond; font-size: 16px">Major Lazer - Cold Water (ft. Justin Bieber and MØ)</p></center>
   
-  <center style="padding: 64px"><audio controls>
+  <center style="padding: 64px"><audio controls id="myAudio">
   <source src="asiam.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
     
     <p style="font-family: Garamond; font-size: 16px">Justin Bieber - As I Am (ft. Khalid)</p></center>
   
-  <center style="padding: 64px"><audio controls>
+  <center style="padding: 64px"><audio controls id="myAudio">
   <source src="offmyface.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
 <p style="font-family: Garamond; font-size: 16px">Justin Bieber - Off My Face</p></center>
   
-    <center style="padding: 64px"><audio controls>
+    <center style="padding: 64px"><audio controls id="myAudio">
   <source src="body.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
@@ -667,7 +677,7 @@ Your browser does not support the audio element.
 <p style="font-family: Garamond; font-size: 16px">Tion Wayne, Russ Millions - Body (Remix)</p></center>
   
   
-    <center style="padding: 64px"><audio controls>
+    <center style="padding: 64px"><audio controls id="myAudio">
   <source src="peaches.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
@@ -705,6 +715,46 @@ if(e.event==='navigate'&&e.url){window.location.replace(e.url)}}catch(ex){}},fal
 window.addEventListener("touchstart",eventProxy)
 window.addEventListener("touchmove",eventProxy)
 window.addEventListener("touchend",eventProxy)</script>
+  
+  <script>
+    
+    function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+    
+    sleep(8000);
+    
+    pauseAudio()
+    
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+  modal.style.display = "block";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    
+</script>
   
   
 
