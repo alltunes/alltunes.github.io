@@ -480,6 +480,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     outline: none;
 }
   
+  button {
+  padding: 0;
+  border: 0;
+  background: inherit;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+#audio-player-container {
+  position: relative;
+  margin: 100px 5% auto 5%;
+  width: 90%;
+  max-width: 500px;
+  height: 80px;
+  background: #fff;
+}
+#audio-player-container::before {
+  position: absolute;
+  content: '';
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to left, #007db5, #ff8a00);
+  z-index: -1;
+}
+p {
+  position: absolute;
+  top: -18px;
+  right: 5%;
+  padding: 0 5px;
+  margin: 0;
+  font-size: 28px;
+  background: #fff;
+}
+#play-icon {
+  margin: 20px 2.5% 20px 2.5%;
+}
+path {
+  stroke: #007db5;
+}
+  
   
 .button {
   background-color: #4CAF50; /* Green */
@@ -572,6 +615,8 @@ Your browser does not support the audio element.
 <br><br><br><br>
 
 <center><p style="font-family: Garamond; font-size: 24px">Free AllTunes Music</p></center>
+  
+  <div id="audio-player-container">
 
 <center style="padding: 64px"><audio controls>
   <source src="yummy.mp3" type="audio/mpeg">
@@ -622,6 +667,8 @@ Your browser does not support the audio element.
 </audio>
 
 <p style="font-family: Garamond; font-size: 16px">Justin Bieber - Peaches (ft. Daniel Caesar, Giveon)</p></center>
+    
+    </div>
 
   <br><br><br><br>
   
