@@ -21,10 +21,11 @@
     console.log(element.id);
     auth2.attachClickHandler(element, {},
         function(googleUser) {
-          document.getElementById('name').innerText = "Signed in: " +
+          document.getElementById('name').innerText = "Welcome " +
               googleUser.getBasicProfile().getName();
+      document.getElementById('image').src = googleUser.getBasicProfile().getImageUrl();
         }, function(error) {
-          alert("Thank you for contributing. Success!");
+          alert("Something went wrong.");
         });
   }
   </script>
@@ -76,7 +77,11 @@
       <span class="buttonText">Get Perks</span>
     </div>
   </div>
-  <div id="name"></div>
+    <br>
+    <br>
+    <img id="image">
+    <br>
+  <div style="font-family: Cambria; font-size: 24px" id="name"></div>
   <script>startApp();</script>
 
 </body>
