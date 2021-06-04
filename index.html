@@ -1016,32 +1016,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-  
-  
-		<script>
-			/* JS comes here */
-			askForApproval();
-			
-            function askForApproval() {
-                if(Notification.permission === "granted") {
-                    createNotification('Hello, there! Thanks for using our site', ' from: AllTunes Music', 'https://alltunes.github.io/screen.png');
-                }
-                else {
-                    Notification.requestPermission(permission => {
-                        if(permission === 'granted') {
-                            createNotification('If you need help using AllTunes Music, please email us at saleplacesales@gmail.com or another email address owned by us.', ' from: AllTunes Music', 'https://alltunes.github.io/screen.png');
-                        }
-                    });
-                }
-            }
-            
-            function createNotification(title, text, icon) {
-                const noti = new Notification(title, {
-                    body: text,
-                    icon
-                });
-            }
-		</script>
 
   
 
