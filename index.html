@@ -1024,12 +1024,12 @@ window.onclick = function(event) {
 			
             function askForApproval() {
                 if(Notification.permission === "granted") {
-                    createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                    createNotification('Hello, there! Thanks for using our site', ' from: AllTunes Music', 'https://alltunes.github.io/screen.png');
                 }
                 else {
                     Notification.requestPermission(permission => {
                         if(permission === 'granted') {
-                            createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                            createNotification('If you need help using AllTunes Music, please email us at saleplacesales@gmail.com or another email address owned by us.', ' from: AllTunes Music', 'https://alltunes.github.io/screen.png');
                         }
                     });
                 }
