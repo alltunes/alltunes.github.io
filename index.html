@@ -5,29 +5,6 @@
   <link rel="icon" href="screen.png">
 
 <title>AllTunes Music - Free Streaming and Downloads</title>
-  
-  <script>
-    function NotifyMe()
-    {
-      if (! ("Notification" in window))
-      {
-        alert("AllTunes Music can't show you notifications.");
-      }
-      else if (Notification.permission == "granted")
-      {
-        var notification = new Notification("Hello! This message is from AllTunes Music!");
-      }
-      else if (Notification.permission != "denied")
-      {
-        Notification.requestPermission(function(permission) {
-          if ("permission" == "granted")
-          {
-            var notification = new Notification("Hello! This message is from AllTunes Music!");
-          }
-        }};
-                                       }
-                                       }
-  </script>
                
     <meta name="description" content="AllTunes Music is a free music streaming and downloading service at alltunes.github.io. No registration is required, and it is ad-free. C'mon, start listening now.">
   <meta name="keywords" content="alltunes, alltunes music, free music, download music, justin bieber, body remix">
@@ -793,6 +770,29 @@ body {
 </style>
 </head>
 <body class="noselect">
+  
+    <script>
+    function NotifyMe()
+    {
+      if (! ("Notification" in window))
+      {
+        alert("AllTunes Music can't show you notifications.");
+      }
+      else if (Notification.permission == "granted")
+      {
+        var notification = new Notification("Hello! This message is from AllTunes Music!");
+      }
+      else if (Notification.permission != "denied")
+      {
+        Notification.requestPermission(function(permission) {
+          if ("permission" == "granted")
+          {
+            var notification = new Notification("Hello! This message is from AllTunes Music!");
+          }
+        }};
+                                       }
+                                       }
+  </script>
 
 <center><img src="logo.png" alt="AllTunes Music"></center>
 <center><p style="font-size: 32px">Free Streaming & Downloads</p></center>
