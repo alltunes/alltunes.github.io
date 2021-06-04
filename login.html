@@ -22,7 +22,7 @@
     auth2.attachClickHandler(element, {},
         function(googleUser) {
           document.getElementById('name').innerText = "Welcome " +
-              googleUser.getBasicProfile().getName() + "."<br> + "You're lookin' really nice!"<br> + "Thanks for contributing by signing in!";
+              googleUser.getBasicProfile().getName();
       document.getElementById('image').src = googleUser.getBasicProfile().getImageUrl();
         }, function(error) {
           alert("Something went wrong.");
@@ -82,6 +82,8 @@
     <img id="image">
     <br>
   <div style="font-family: Cambria; font-size: 24px" id="name"></div>
+    <p style="font-family: Cambria; font-size: 24px">You're looking good!</p>
+    <p style="font-family: Cambria; font-size: 24px">By signing in, you're helping us show you more interesting songs, etc.</p>
   <script>startApp();</script>
 
 </body>
