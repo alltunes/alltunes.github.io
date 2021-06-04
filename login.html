@@ -22,7 +22,7 @@
     auth2.attachClickHandler(element, {},
         function(googleUser) {
           document.getElementById('name').innerText = "Welcome " +
-              googleUser.getBasicProfile().getName();
+              googleUser.getBasicProfile().getName() + "."<br> + "You're lookin' really nice!"<br> + "Thanks for contributing by signing in!";
       document.getElementById('image').src = googleUser.getBasicProfile().getImageUrl();
         }, function(error) {
           alert("Something went wrong.");
