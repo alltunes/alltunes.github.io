@@ -66,6 +66,9 @@
   </style>
   </head>
   <body>
+    
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="IBPWMFeX"></script>
   <!-- In the callback, you would hide the gSignInWrapper element on a
   successful sign in -->
   <div id="gSignInWrapper">
@@ -76,5 +79,9 @@
   </div>
   <div id="name"></div>
   <script>startApp();</script>
+    
+    <br>
+    <br>
+    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
 </body>
 </html>
