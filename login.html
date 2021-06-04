@@ -1,6 +1,5 @@
 <html>
 <head>
-<title>AllTunes Music Perks - Join Us</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/api:client.js"></script>
   <script>
@@ -9,7 +8,7 @@
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: '740719760848-nd9tupgc57r8hsf4rfi2fhch126digt7.apps.googleusercontent.com',
+        client_id: '740719760848-1jscf0jmpnl88ha24kaj7vpus25a5713.apps.googleusercontent.com',
         cookiepolicy: 'single_host_origin',
         // Request scopes in addition to 'profile' and 'email'
         //scope: 'additional_scope'
@@ -48,7 +47,7 @@
       font-weight: normal;
     }
     span.icon {
-      background: url('https://developers.google.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+      background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
       display: inline-block;
       vertical-align: middle;
       width: 42px;
@@ -57,7 +56,7 @@
     span.buttonText {
       display: inline-block;
       vertical-align: middle;
-      padding-left: 4px;
+      padding-left: 42px;
       padding-right: 42px;
       font-size: 14px;
       font-weight: bold;
@@ -70,9 +69,10 @@
   <!-- In the callback, you would hide the gSignInWrapper element on a
   successful sign in -->
   <div id="gSignInWrapper">
+    <span class="label">Sign in with:</span>
     <div id="customBtn" class="customGPlusSignIn">
       <span class="icon"></span>
-      <span class="buttonText">Join AllTunes Music</span>
+      <span class="buttonText">Google</span>
     </div>
   </div>
   <div id="name"></div>
