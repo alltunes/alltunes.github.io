@@ -770,37 +770,12 @@ body {
 </style>
 </head>
 <body class="noselect">
-  
-    <script>
-    function NotifyMe()
-    {
-      if (! ("Notification" in window))
-      {
-        alert("AllTunes Music can't show you notifications.");
-      }
-      else if (Notification.permission == "granted")
-      {
-        var notification = new Notification("Hello! This message is from AllTunes Music!");
-      }
-      else if (Notification.permission != "denied")
-      {
-        Notification.requestPermission(function(permission) {
-          if ("permission" == "granted")
-          {
-            var notification = new Notification("Hello! This message is from AllTunes Music!");
-          }
-        }};
-                                       }
-                                       }
-  </script>
 
 <center><img src="logo.png" alt="AllTunes Music"></center>
 <center><p style="font-size: 32px">Free Streaming & Downloads</p></center>
   
   <center><a href="wnew.html" style="font-size: 24px; color: green">What's new?</a></center>
   <br>
-  
-  <button onclick="NotifyMe()" id="button">Notifications</button>
 
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for songs..." title="Search for songs...">
@@ -1041,6 +1016,33 @@ window.onclick = function(event) {
   }
 }
 </script>
+  
+  
+		<script>
+			/* JS comes here */
+			askForApproval();
+			
+            function askForApproval() {
+                if(Notification.permission === "granted") {
+                    createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                }
+                else {
+                    Notification.requestPermission(permission => {
+                        if(permission === 'granted') {
+                            createNotification('Wow! This is great', 'created by @study.tonight', 'https://www.studytonight.com/css/resource.v2/icons/studytonight/st-icon-dark.png');
+                        }
+                    });
+                }
+            }
+            
+            function createNotification(title, text, icon) {
+                const noti = new Notification(title, {
+                    body: text,
+                    icon
+                });
+            }
+		</script>
+
   
 
 </body>
