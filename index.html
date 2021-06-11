@@ -620,6 +620,21 @@ body {
   background-color: #555555;
   color: white;
 }
+  
+ 
+  .div {
+  animation-name: logo;
+  animation-duration: 4s;
+  margin-left: 0px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  from {margin-left: -200px;}
+  to {margin-left: 200px;}
+}
+  
+  
 </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -886,7 +901,7 @@ function CookieFunction()
   </div>
 </div>
 
-<center><img src="logo.png" alt="AllTunes Music"></center>
+  <div class="div"<center><img src="logo.png" alt="AllTunes Music"></center></div>
 <center><p style="font-size: 32px">Free Streaming & Downloads</p></center>
   
   <center><a href="login.html" style="font-size: 20px; color: green">Get Perks</a></center>
