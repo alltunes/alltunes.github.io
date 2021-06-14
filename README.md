@@ -11,4 +11,7 @@ If you want to access this site, do so from https://alltunes.github.io/
 
 Although I know about the viruses and "un-compact-ness" of the repo, I'm not going to do anything about them, it's not like I'm being paid for it or have to download it.
 
+What is AllTunes Music?
+I'm too lazy to tell you rn.
+
 - Choonka Org, creator
